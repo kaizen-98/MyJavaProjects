@@ -156,7 +156,7 @@ public class schoolApp {
 							System.out.println("Math : " + m.getMath());
 							System.out.println("Arabic : " + m.getArabic());
 							System.out.println("Sci : " + m.getSci());
-							System.out.println("+++++++++++++Done++++++++++++++");
+							System.out.println("+++++++++++++Done+++++++++++++++");
 						}
 					}
 				}
