@@ -30,6 +30,7 @@ public class schoolApp {
 		// here we use while loop for looping 
 		boolean i = true;
 		while (i) {
+			// for department 
 			Department department = new Department();
 			System.out.println("Now Enter the Department Name?");
 			String dName = kb.next();
@@ -40,6 +41,7 @@ public class schoolApp {
 
 			boolean j = true;
 			while (j) {
+				// for teacher 
 				Teacher teacher = new Teacher();
 				System.out.println("Now Enter the Teacher Name?");
 				String wName = kb.next();
@@ -51,6 +53,7 @@ public class schoolApp {
 				
 				boolean c = true;
 				while (c) {
+					// for student 
 					Student student = new Student();
 					System.out.println("Now Enter the Student Name?");
 					String Name = kb.next();
@@ -62,6 +65,7 @@ public class schoolApp {
 					
 					boolean d = true;
 					while (d) {
+						// for coures 
 						Coures coures = new Coures();
 						System.out.println("Now Enter the Coures Name?");
 						String cName = kb.next();
@@ -73,6 +77,7 @@ public class schoolApp {
 					
 						boolean e = true;
 						while (e) {
+							// marks
 							Marks mark = new Marks();
 							System.out.println("Now Enter the Marks From 100%?");
 							System.out.println("Math ");
