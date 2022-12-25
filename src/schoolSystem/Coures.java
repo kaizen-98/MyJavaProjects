@@ -3,7 +3,7 @@ package schoolSystem;
 import java.util.ArrayList;
 
 public class Coures {
-
+	// creating object and array list
 	Marks mark = new Marks(); 
 	
 	private String Name;

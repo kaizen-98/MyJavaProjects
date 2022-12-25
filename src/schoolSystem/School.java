@@ -2,9 +2,9 @@ package schoolSystem;
 
 public class School {
 
-	
+	// creating object for the department 
 	Department Department = new Department();
-	
+	// varibles
 	private String Name;
 	private int adress;
 	
