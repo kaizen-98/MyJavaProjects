@@ -27,7 +27,7 @@ public class schoolApp {
 		System.out.println("Information Sucessfully stored!");
 		System.out.println("School Name is : " + school.getName());
 		System.out.println("School Adress : " + school.getAdress());
-
+		// here we use while loop for looping 
 		boolean i = true;
 		while (i) {
 			Department department = new Department();
@@ -134,6 +134,7 @@ public class schoolApp {
 			}
 
 		}
+		// The output of the 
 		System.out.println("\n⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘");
 		System.out.println("\n+++++++++++++ School Details ++++++++++++++");
 		System.out.println("School Name is : " + school.getName());
