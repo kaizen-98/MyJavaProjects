@@ -8,11 +8,14 @@ import java.util.ArrayList;
 public class schoolApp {
 
 	public static void main(String[] args) {
-
+		// here we create scanner so the user can input data
 		Scanner kb = new Scanner(System.in);
+		// create school object here
 		School school = new School();
+		// create welcome massage here
 		ArrayList<Department> depList = new ArrayList<Department>();
 
+		// the welcome massage here and school information 
 		System.out.println("Welcome to our School!!");
 		System.out.println("You have to enter school info\n!!");
 		System.out.println("Enter the School Name?");
