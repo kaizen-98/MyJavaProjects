@@ -2,9 +2,9 @@ package schoolSystem;
 
 import java.util.ArrayList;
 import java.util.Scanner;
-
+import java.util.Stack;
 import java.util.ArrayList;
-
+import java.util.Stack;
 public class schoolApp {
 
 	public static void main(String[] args) {
@@ -14,6 +14,7 @@ public class schoolApp {
 		School school = new School();
 		// create welcome massage here
 		ArrayList<Department> depList = new ArrayList<Department>();
+		Stack<String> stack = new Stack<String>();
 
 		// the welcome massage here and school information 
 		System.out.println("Welcome to our School!!");
@@ -21,9 +22,12 @@ public class schoolApp {
 		System.out.println("Enter the School Name?");
 		String sName = kb.next();
 		school.setName(sName);
+		stack.push(sName);
 		System.out.println("Enter School Adress?");
 		int sAdress = kb.nextInt();
 		school.setAdress(sAdress);
+		String sdaresss = Integer.toString(sAdress);
+		stack.push(sdaresss);
 		System.out.println("Information Sucessfully stored!");
 		System.out.println("School Name is : " + school.getName());
 		System.out.println("School Adress : " + school.getAdress());
@@ -35,10 +39,12 @@ public class schoolApp {
 			System.out.println("Now Enter the Department Name?");
 			String dName = kb.next();
 			department.setName(dName);
+			stack.push(dName);
 			System.out.println("Now Enter the Department iD?");
 			int iD = kb.nextInt();
 			department.setNumId(iD);
-
+			String iDd = Integer.toString(iD);
+			stack.push(iDd);
 			boolean j = true;
 			while (j) {
 				// for teacher 
@@ -46,11 +52,12 @@ public class schoolApp {
 				System.out.println("Now Enter the Teacher Name?");
 				String wName = kb.next();
 				teacher.setName(wName);
+				stack.push(wName);
 				System.out.println("Now Enter the Teacher Age?");
 				int wAge = kb.nextInt();
 				teacher.setAge(wAge);
-
-				
+				String wage = Integer.toString(wAge);
+				stack.push(wage);
 				boolean c = true;
 				while (c) {
 					// for student 
@@ -58,11 +65,12 @@ public class schoolApp {
 					System.out.println("Now Enter the Student Name?");
 					String Name = kb.next();
 					student.setName(Name);
+					stack.push(Name);
 					System.out.println("Now Enter the Student iD?");
 					int id = kb.nextInt();
 					student.setiDs(id);
-
-					
+					String idse = Integer.toString(id);
+					stack.push(idse);
 					boolean d = true;
 					while (d) {
 						// for coures 
@@ -70,11 +78,12 @@ public class schoolApp {
 						System.out.println("Now Enter the Coures Name?");
 						String cName = kb.next();
 						coures.setName(cName);
+						stack.push(cName);
 						System.out.println("Now Enter the Coures code?");
 						int code = kb.nextInt();
 						coures.setCode(code);
-
-					
+						String codee = Integer.toString(code);
+						stack.push(codee);
 						boolean e = true;
 						while (e) {
 							// marks
@@ -83,13 +92,18 @@ public class schoolApp {
 							System.out.println("Math ");
 							int math = kb.nextInt();
 							mark.setMath(math);
+							String math1 = Integer.toString(math);
+							stack.push(math1);
 							System.out.println("Arabic ");
 							int arabic = kb.nextInt();
 							mark.setMath(arabic);
+							String arabic1 = Integer.toString(arabic);
+							stack.push(arabic1);
 							System.out.println("Sci ");
 							int sci = kb.nextInt();
 							mark.setMath(sci);
-
+							String sci1 = Integer.toString(sci);
+							stack.push(sci1);
 							System.out.println("Do you add more Marks? yes/no?");
 							String keyyyl = kb.next();
 							if (keyyyl.equals("yes")) {
@@ -166,10 +180,14 @@ public class schoolApp {
 							System.out.println("Arabic : " + m.getArabic());
 							System.out.println("Sci : " + m.getSci());
 							System.out.println("+++++++++++++Done+++++++++++++++");
+							
 						}
 					}
 				}
 			}
+		}
+		for(String x : stack) {
+			System.out.println(" History "+x);
 		}
 
 	}
