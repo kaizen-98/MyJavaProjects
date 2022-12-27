@@ -1,5 +1,7 @@
 package schoolSystem;
 
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.Stack;
@@ -7,7 +9,7 @@ import java.util.ArrayList;
 import java.util.Stack;
 public class schoolApp {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		// here we create scanner so the user can input data
 		Scanner kb = new Scanner(System.in);
 		// create school object here
@@ -189,7 +191,12 @@ public class schoolApp {
 		for(String x : stack) {
 			System.out.println(" History "+x);
 		}
-
+		FileWriter write = new FileWriter("\\Users\\Lenovo\\Desktop\\Java101\\schooloutput11.txt");
+		write.write("this will be outside output");
+		for (String x : stack) {
+			write.write("\n " +x);
+		}
+		write.close();
 	}
 
 }
