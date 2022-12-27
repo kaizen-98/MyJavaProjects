@@ -22,7 +22,7 @@ public class World {
 		//}
 		
 		
-		
+		// this to create file and put the output inside
 		FileWriter write = new FileWriter("\\Users\\Lenovo\\Desktop\\Java101\\country.txt");
 		for (String x :country) {
 			write.write("\n"+x);

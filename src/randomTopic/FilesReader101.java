@@ -10,7 +10,7 @@ public class FilesReader101 {
 	public static void main(String[] args) throws IOException {
 	
 		
-		
+		// this code to read txt from already exiting file created by the user 
 		File file = new File("\\Users\\Lenovo\\Desktop\\Java101\\ElonMusk.txt");
 		Scanner scan = new Scanner(file);
 
@@ -21,6 +21,7 @@ public class FilesReader101 {
 			txtContent = txtContent.concat(scan.nextLine() + "\n");
 		}
 		
+		// this to ctreated a file
 		FileWriter write = new FileWriter("\\Users\\Lenovo\\Desktop\\Java101\\NewElonMusk.txt");
 		write.write(txtContent);
 		write.close();
