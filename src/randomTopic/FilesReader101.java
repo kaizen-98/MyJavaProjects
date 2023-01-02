@@ -21,31 +21,11 @@ public class FilesReader101 {
 			txtContent = txtContent.concat(scan.nextLine() + "\n");
 		}
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+	
 		// this to ctreated a file
-		//FileWriter write = new FileWriter("\\Users\\Lenovo\\Desktop\\Java101\\NewElonMusk.txt");
-		//write.write(txtContent);
-		//write.close();
+		FileWriter write = new FileWriter("\\Users\\Lenovo\\Desktop\\Java101\\NewElonMusk.pdf");
+		write.write(txtContent);
+		write.close();
 		
 		
 	}

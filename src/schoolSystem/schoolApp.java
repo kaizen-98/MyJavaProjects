@@ -7,6 +7,7 @@ import java.util.Scanner;
 import java.util.Stack;
 import java.util.ArrayList;
 import java.util.Stack;
+
 public class schoolApp {
 
 	public static void main(String[] args) throws IOException {
@@ -18,7 +19,7 @@ public class schoolApp {
 		ArrayList<Department> depList = new ArrayList<Department>();
 		Stack<String> stack = new Stack<String>();
 
-		// the welcome massage here and school information 
+		// the welcome massage here and school information
 		System.out.println("Welcome to our School!!");
 		System.out.println("You have to enter school info\n!!");
 		System.out.println("Enter the School Name?");
@@ -33,10 +34,10 @@ public class schoolApp {
 		System.out.println("Information Sucessfully stored!");
 		System.out.println("School Name is : " + school.getName());
 		System.out.println("School Adress : " + school.getAdress());
-		// here we use while loop for looping 
+		// here we use while loop for looping
 		boolean i = true;
 		while (i) {
-			// for department 
+			// for department
 			Department department = new Department();
 			System.out.println("Now Enter the Department Name?");
 			String dName = kb.next();
@@ -49,7 +50,7 @@ public class schoolApp {
 			stack.push(iDd);
 			boolean j = true;
 			while (j) {
-				// for teacher 
+				// for teacher
 				Teacher teacher = new Teacher();
 				System.out.println("Now Enter the Teacher Name?");
 				String wName = kb.next();
@@ -62,7 +63,7 @@ public class schoolApp {
 				stack.push(wage);
 				boolean c = true;
 				while (c) {
-					// for student 
+					// for student
 					Student student = new Student();
 					System.out.println("Now Enter the Student Name?");
 					String Name = kb.next();
@@ -75,7 +76,7 @@ public class schoolApp {
 					stack.push(idse);
 					boolean d = true;
 					while (d) {
-						// for coures 
+						// for coures
 						Coures coures = new Coures();
 						System.out.println("Now Enter the Coures Name?");
 						String cName = kb.next();
@@ -106,6 +107,7 @@ public class schoolApp {
 							mark.setMath(sci);
 							String sci1 = Integer.toString(sci);
 							stack.push(sci1);
+
 							System.out.println("Do you add more Marks? yes/no?");
 							String keyyyl = kb.next();
 							if (keyyyl.equals("yes")) {
@@ -113,6 +115,7 @@ public class schoolApp {
 							} else {
 								e = false;
 							}
+
 							student.coure.mlist.add(mark);
 						}
 						student.clist.add(coures);
@@ -155,7 +158,7 @@ public class schoolApp {
 			}
 
 		}
-		// The output of the 
+		// The output of the
 		System.out.println("\n⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘⌘");
 		System.out.println("\n+++++++++++++ School Details ++++++++++++++");
 		System.out.println("School Name is : " + school.getName());
@@ -182,19 +185,19 @@ public class schoolApp {
 							System.out.println("Arabic : " + m.getArabic());
 							System.out.println("Sci : " + m.getSci());
 							System.out.println("+++++++++++++Done+++++++++++++++");
-							
+
 						}
 					}
 				}
 			}
 		}
-		for(String x : stack) {
-			System.out.println(" History "+x);
+		for (String x : stack) {
+			System.out.println(" History " + x);
 		}
 		FileWriter write = new FileWriter("\\Users\\Lenovo\\Desktop\\Java101\\schooloutput11.txt");
 		write.write("this will be outside output");
 		for (String x : stack) {
-			write.write("\n " +x);
+			write.write("\n " + x);
 		}
 		write.close();
 	}
