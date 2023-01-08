@@ -7,7 +7,7 @@ public class Djx {
 		String[] names = {"Atyab", "Fatima", "Saeed", "Abdullah", "Malak", "Fatima", "Daniyal", "atyab", "Abdullah", "Abdullah"};
 
 		for(int i =0; i<names.length; i++) {
-			System.out.println(" Name! "+i+":"+names[i]);
+			System.out.println(" Name!"+i+":"+names[i]);
 		}
 		
 
