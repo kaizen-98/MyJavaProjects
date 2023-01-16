@@ -5,6 +5,9 @@ import java.util.Arrays;
 public class TheFristQustion {
 
 	public static void main(String[] args) {
+		
+		
+		
 		int[] numbers = { 1, 2, 3, 4, 5, 6 };
 		int[] numbers1 = { 1, 2, 5, 5, 5, 6 };
 		int[] numbers2 = { 1, 2, 3, 4, 2, 1 };
