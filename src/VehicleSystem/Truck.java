@@ -31,7 +31,7 @@ public class Truck extends Vehicle{
 
 
 
-	public static void Load(int weight) {
+	public  void Load(int weight) {
 		System.out.println("Loaded "+weight+" tons.!");
 	}
 }

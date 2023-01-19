@@ -61,22 +61,22 @@ public class Vehicle {
 		this.weight = weight;
 	}
 
-	public static void Start() {
+	public void Start() {
 		System.out.println("Vehicle started!");
 
 	}
 
-	public static void Stop() {
+	public void Stop() {
 		System.out.println("Vehicle stopped!");
 
 	}
 
-	public static void Drive(int miles) {
+	public void Drive(int miles) {
 		System.out.println("Vehicle driven "+miles+" miles");
 
 	}
 
-	public static void Honk() {
+	public void Honk() {
 		System.out.println("Honk Honk!");
 
 	}

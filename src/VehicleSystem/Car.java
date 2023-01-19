@@ -18,7 +18,7 @@ public class Car extends Vehicle {
 
 
 
-	public static void OpenTrunk() {
+	public void OpenTrunk() {
 		System.out.println("Trunk opened!");
 	}
 }

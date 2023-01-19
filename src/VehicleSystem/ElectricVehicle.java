@@ -6,8 +6,16 @@ public class ElectricVehicle extends Vehicle {
 
 	private int chargeLevel;
 
-	public static void Charge() {
+	public  void Charge() {
 
 	}
+
+	@Override
+	public void Drive(int miles) {
+		// TODO Auto-generated method stub
+		super.Drive(miles);
+		System.out.println("Vehicle driven "+miles+" miles");
+	}
+	
 
 }
